@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Chatbox - DaveAI</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://kit.fontawesome.com/452deeba17.js" crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+	<div class="bg-page">
+		<!-- The Chat Box -->
+
+		<div class="dave-chatbox-cont">
+			<div class="dave-chatbox">
+				<div class="dave-cb-tt-sec">
+					<div class="dave-cb-tt">ALDO Virtual Assistant</div>
+					<div class="dave-cb-tt-cross"><i class="fas fa-times"></i></div>
+				</div>
+				<!-- Chatbox Chatting Area -->
+				<div class="dave-cb-chatarea">
+					<div class="dave-userchat">
+						<div class="dave-uc-avtar"><span>U</span></div>
+						<p class="dave-chattext">Hi! I see that you are looking at running shoes, Here are some shoes which are popular and heavily discounted</p>
+						<div class="dave-chat-items-contt">
+							<ul class="dave-chat-items">
+								<li>
+									<div class="dave-chat-items-imgcontt"><img src="images/image 22.png"></div>
+									<p class="dave-chat-items-top-p">Buy 2 get 1 free</p>
+									<p class="dave-chat-items-bottom-p">Gleadien $39.00</p>
+								</li>
+								<li>
+									<div class="dave-chat-items-imgcontt"><img src="images/image 23.png"></div>
+									<p class="dave-chat-items-top-p">Buy 2 get 1 free</p>
+									<p class="dave-chat-items-bottom-p">Gleadien $39.00</p>
+								</li>
+								<li>
+									<div class="dave-chat-items-imgcontt"><img src="images/image 24.png"></div>
+									<p class="dave-chat-items-top-p">Buy 2 get 1 free</p>
+									<p class="dave-chat-items-bottom-p">Gleadien $39.00</p>
+								</li>
+								<li>
+									<div class="dave-chat-items-imgcontt"><img src="images/image 25.png"></div>
+									<p class="dave-chat-items-top-p">Buy 2 get 1 free</p>
+									<p class="dave-chat-items-bottom-p">Gleadien $39.00</p>
+								</li>
+								<li>
+									<div class="dave-chat-items-imgcontt"><img src="images/image 22.png"></div>
+									<p class="dave-chat-items-top-p">Buy 2 get 1 free</p>
+									<p class="dave-chat-items-bottom-p">Gleadien $39.00</p>
+								</li>
+								<li>
+									<div class="dave-chat-items-imgcontt"><img src="images/image 23.png"></div>
+									<p class="dave-chat-items-top-p">Buy 2 get 1 free</p>
+									<p class="dave-chat-items-bottom-p">Gleadien $39.00</p>
+								</li>
+								<li>
+									<div class="dave-chat-items-imgcontt"><img src="images/image 24.png"></div>
+									<p class="dave-chat-items-top-p">Buy 2 get 1 free</p>
+									<p class="dave-chat-items-bottom-p">Gleadien $39.00</p>
+								</li>
+								<li>
+									<div class="dave-chat-items-imgcontt"><img src="images/image 25.png"></div>
+									<p class="dave-chat-items-top-p">Buy 2 get 1 free</p>
+									<p class="dave-chat-items-bottom-p">Gleadien $39.00</p>
+								</li>
+							</ul>
+
+						</div>
+					</div>
+					<div class="dave-botchat">
+						<div class="dave-bc-avtar"><span>A</span></div>
+						<p class="dave-botchat-p">Here is response from user</p>
+					</div>
+				</div>
+				<!-- Chatbox Chatting Area End -->
+				<div class="dave-cb-chatsugg">
+					<div class="dave-cb-chatsugg-list">Matching Bag</div>
+					<div class="dave-cb-chatsugg-list">Matching Accessories</div>
+					<div class="dave-cb-chatsugg-list">Shoes with Discount</div>
+					<div class="dave-cb-chatsugg-list">Offer Products</div>
+				</div>
+				<div class="dave-cb-type-sec">
+					<div class="dave-cb-input"><input type="" name="" placeholder="Type here.."></div>
+					<div class="dave-cb-send-icon"><button><i class="fas fa-paper-plane"></i></button></div>
+				</div>
+			</div>
+
+			<div class="dave-cb-icon"><img src="images/dave-icon.png"></div>
+		</div>
+		<!-- The Chat Box Ends -->
+	</div>
+<script type="text/javascript">
+	$(".dave-cb-icon").on("click",function () {
+		$(".dave-chatbox").toggleClass("dave-chatbox-open");
+		$(".dave-cb-icon").toggleClass("dave-cb-icon-hide");
+	})
+	$(".dave-cb-tt-cross").click(function(){
+		$(".dave-chatbox").removeClass("dave-chatbox-open");
+		$(".dave-cb-icon").removeClass("dave-cb-icon-hide");
+	});
+</script>
+</body>
+</html>
